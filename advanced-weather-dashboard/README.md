@@ -1,14 +1,5 @@
-⛈️ Advanced Weather Dashboard
-(Python Flask + JavaScript ES6+)
-
-Um projeto Full-Stack contendo:
-
-Back-end em Python/Flask funcionando como API Proxy para proteger a chave da OpenWeatherMap.
-
-Front-end em HTML/CSS/JavaScript, consumindo dados limpos e padronizados, exibidos em um dashboard moderno e responsivo.
-
-✨ Funcionalidades
-🔧 Back-end (Python/Flask)
+## ✨ Funcionalidades
+**🔧 Back-end (Python/Flask)**
 
 Proxy seguro para ocultar a chave API da OpenWeatherMap (usando .env).
 
@@ -18,10 +9,9 @@ Suporte a CORS para permitir a comunicação com o Front-end.
 
 Organização simples e clara, focada em segurança e boas práticas.
 
-🖥️ Front-end (HTML/CSS/JS)
+**🖥️ Front-end (HTML/CSS/JS)**
 
 Interface limpa e responsiva.
-
 Busca de cidades com requisições assíncronas usando fetch + async/await.
 
 Exibição organizada de:
@@ -34,83 +24,70 @@ Velocidade do vento
 
 Ícone do clima (OpenWeatherMap)
 
-🛠️ Como Executar Localmente
-📌 Pré-requisitos
+## 🛠️ Como Executar Localmente
+**📌 Pré-requisitos**
 
 Python 3 instalado
 
 pip instalado
 
-1. Clonar o Repositório
-git clone https://github.com/SEU_USUARIO/advanced-weather-dashboard.git
+**1. Clonar o Repositório**
+
+git clone https://github.com/SEU_USUARIO/PROJETO-FULL-STACK-.git     
 cd advanced-weather-dashboard
 
-2. Configurar a Chave API Secreta
+**2. Configurar a Chave API Secreta**
 
-Crie uma conta no OpenWeatherMap e obtenha sua API key.
-
-Crie um arquivo chamado .env na raiz do projeto.
-
-Adicione sua chave nesse formato:
-
-# .env
+Crie um arquivo .env na raiz do projeto e adicione:
 OPENWEATHER_API_KEY="SUA_CHAVE_AQUI"
 
+Essa chave api você consegue criando uma conta no site https://openweathermap.org/
 
-Substitua "SUA_CHAVE_AQUI" pela sua chave real.
+**3. Configurar e Iniciar o Back-end**
 
-3. Configurar e Iniciar o Back-end
+python -m venv venv    
 
-O servidor Flask rodará em:
-👉 http://127.0.0.1:5000
+Ativar:
 
-Criar ambiente virtual:
-python -m venv venv
-
-Ativar o ambiente:
-
-Windows (PowerShell):
-
+Windows:
 & ".\venv\Scripts\activate"
 
-
-Linux/macOS:
+linux/macOS:
 
 source venv/bin/activate
 
 Instalar dependências:
+
 pip install Flask python-dotenv requests flask-cors
 
-Iniciar o servidor:
+Iniciar:
+
 python app.py
 
-4. Abrir o Front-end
+**4. Abrir o Front-end**
 
-Basta abrir o arquivo:
+Abra o arquivo:
 
 index.html
 
+## ⚙️ Tecnologias Utilizadas
 
-Use “Clique com o botão direito → Abrir com…” no seu navegador.
+**Python**
 
-Com o Flask rodando, utilize o campo de busca e veja o dashboard em ação.
+**Flask**
 
-⚙️ Tecnologias Utilizadas
+**Requests**
 
-Python 3
+**Dotenv**
 
-Flask
+**Flask-CORS**
 
-dotenv
+**HTML**
 
-Requests
+**CSS**
 
-Flask-CORS
+**JavaScript ES6+**
 
-HTML5 / CSS3
 
-JavaScript ES6+
 
-JavaScript (ES6+): Lógica e consumo de API no Front-end.
 
-HTML5 & CSS3: Estrutura e estilização.
