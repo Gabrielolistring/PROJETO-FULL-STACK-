@@ -17,11 +17,11 @@ Este é um projeto Full-Stack que demonstra a construção de uma **API segura e
 
 ## 🛠️ Como Executar Localmente
 
-### Pré-requisitos
+**Pré-requisitos**
 
 Você precisa ter o **Python 3** e o **pip** instalados em seu sistema.
 
-### 1. Clonar o Repositório
+## 1. Clonar o Repositório
 
 Abra seu terminal e clone este projeto:
 
@@ -29,7 +29,7 @@ Abra seu terminal e clone este projeto:
 git clone [https://github.com/SEU_USUARIO/advanced-weather-dashboard.git](https://github.com/SEU_USUARIO/advanced-weather-dashboard.git)
 cd advanced-weather-dashboard
 ---
-### 2. Configurar a Chave API Secreta
+## 2. Configurar a Chave API Secreta
 Este passo é crucial para o Back-end funcionar.
 
 Crie uma conta na OpenWeatherMap e obtenha uma chave API gratuita.
@@ -44,7 +44,7 @@ Ini, TOML
 OPENWEATHER_API_KEY="SUA_CHAVE_AQUI"
 (Substitua "SUA_CHAVE_AQUI" pela chave que você obteve.)
 ---
-### 3. Configurar e Iniciar o Back-end
+## 3. Configurar e Iniciar o Back-end
 O Back-end rodará em http://127.0.0.1:5000.
 
 Bash
@@ -63,8 +63,10 @@ pip install Flask python-dotenv requests flask-cors
 # Inicie o servidor Flask
 python app.py
 Deixe o servidor rodando no terminal.
+
 ---
-### 4. Abrir o Front-end
+
+## 4. Abrir o Front-end
 Abra o arquivo index.html no seu navegador de preferência (clique com o botão direito -> Abrir com...).
 
 Com o servidor Flask rodando em segundo plano, utilize o formulário de busca na página para testar a aplicação.
