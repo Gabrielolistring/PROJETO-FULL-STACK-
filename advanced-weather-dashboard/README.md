@@ -29,40 +29,40 @@ Velocidade do vento
 
 Python 3 instalado
 
-pip instalado
+**`pip instalado`**
 
 **1. Clonar o Repositório**
 
-git clone https://github.com/SEU_USUARIO/PROJETO-FULL-STACK-.git     
-cd advanced-weather-dashboard
+**`git clone https://github.com/SEU_USUARIO/PROJETO-FULL-STACK-.git`**     
+**`cd advanced-weather-dashboard`**
 
 **2. Configurar a Chave API Secreta**
 
 Crie um arquivo .env na raiz do projeto e adicione:
-OPENWEATHER_API_KEY="SUA_CHAVE_AQUI"
+**`OPENWEATHER_API_KEY="SUA_CHAVE_AQUI"`**
 
 Essa chave api você consegue criando uma conta no site https://openweathermap.org/
 
 **3. Configurar e Iniciar o Back-end**
 
-python -m venv venv    
+**`python -m venv venv`**    
 
 Ativar:
 
 Windows:
-& ".\venv\Scripts\activate"
+**`& ".\venv\Scripts\activate"`**
 
 linux/macOS:
 
-source venv/bin/activate
+**`source venv/bin/activate`**
 
 Instalar dependências:
 
-pip install Flask python-dotenv requests flask-cors
+**`pip install Flask python-dotenv requests flask-cors`**
 
 Iniciar:
 
-python app.py
+**`python app.py`**
 
 **4. Abrir o Front-end**
 
