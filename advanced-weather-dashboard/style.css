@@ -1,0 +1,134 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Header e Formulário */
+header h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#search-form input, #search-form button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#search-form input {
+    width: 60%;
+}
+
+#search-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard */
+#weather-dashboard {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#city-name {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.temp-display {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#description {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #666;
+}
+
+/* Detalhes */
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.details span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+#error-message {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fdd;
+    border: 1px solid #d9534f;
+    border-radius: 6px;
+}

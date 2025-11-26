@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Previsão do Tempo Avançada</h1>
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="Digite uma cidade..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+
+        <main id="weather-dashboard" class="hidden">
+            <h2 id="city-name"></h2>
+            
+            <section class="main-info">
+                <div class="temp-display">
+                    <img id="weather-icon" src="" alt="Ícone do Clima">
+                    <span id="temperature"></span>
+                </div>
+                <p id="description"></p>
+            </section>
+
+            <section class="details">
+                <div>
+                    <h4>Umidade</h4>
+                    <span id="humidity">--</span>
+                </div>
+                <div>
+                    <h4>Vento</h4>
+                    <span id="wind-speed">--</span>
+                </div>
+                <div>
+                    <h4>Máx / Mín</h4>
+                    <span id="temp-range">-- / --</span>
+                </div>
+            </section>
+        </main>
+        
+        <p id="error-message" class="hidden">Cidade não encontrada ou erro de conexão.</p>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
