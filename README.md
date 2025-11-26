@@ -1,4 +1,4 @@
-Este projeto realizei para estudar mais sobre APIs e como elas funcionam.
+**`Este projeto realizei para estudar mais sobre APIs e como elas funcionam.`**
 
 ## ✨ Funcionalidades
 **🔧 Back-end (Python/Flask)**
