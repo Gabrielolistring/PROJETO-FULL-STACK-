@@ -1,80 +1,115 @@
-# ⛈️ Advanced Weather Dashboard (Python Flask + JavaScript ES6+)
+⛈️ Advanced Weather Dashboard
+(Python Flask + JavaScript ES6+)
 
-Este é um projeto Full-Stack que demonstra a construção de uma **API segura em Python (Flask)** para funcionar como um proxy (intermediário) para a API externa do OpenWeatherMap, protegendo a chave de acesso. O Front-end em **JavaScript** consome o dado limpo e padronizado e exibe um dashboard interativo.
+Um projeto Full-Stack contendo:
 
-## ✨ Funcionalidades
+Back-end em Python/Flask funcionando como API Proxy para proteger a chave da OpenWeatherMap.
 
-* **Back-end (Python/Flask):**
-    * Proxy de API para ocultar a chave secreta da OpenWeatherMap (usando `.env`).
-    * Tratamento de erros e padronização da resposta JSON.
-    * Suporte a CORS (Cross-Origin Resource Sharing) para comunicação com o Front-end.
-* **Front-end (HTML/CSS/JS):**
-    * Interface responsiva para busca de cidades.
-    * Uso de `async/await` e `fetch` para comunicação assíncrona com o Back-end.
-    * Exibição organizada de temperatura, umidade, velocidade do vento e ícone do clima.
+Front-end em HTML/CSS/JavaScript, consumindo dados limpos e padronizados, exibidos em um dashboard moderno e responsivo.
 
----
+✨ Funcionalidades
+🔧 Back-end (Python/Flask)
 
-## 🛠️ Como Executar Localmente
+Proxy seguro para ocultar a chave API da OpenWeatherMap (usando .env).
 
-**Pré-requisitos**
+Padronização e tratamento de erros das respostas JSON.
 
-Você precisa ter o **Python 3** e o **pip** instalados em seu sistema.
+Suporte a CORS para permitir a comunicação com o Front-end.
 
-## 1. Clonar o Repositório
+Organização simples e clara, focada em segurança e boas práticas.
 
-Abra seu terminal e clone este projeto:
+🖥️ Front-end (HTML/CSS/JS)
 
-```bash
-git clone [https://github.com/SEU_USUARIO/advanced-weather-dashboard.git](https://github.com/SEU_USUARIO/advanced-weather-dashboard.git)
+Interface limpa e responsiva.
+
+Busca de cidades com requisições assíncronas usando fetch + async/await.
+
+Exibição organizada de:
+
+Temperatura
+
+Umidade
+
+Velocidade do vento
+
+Ícone do clima (OpenWeatherMap)
+
+🛠️ Como Executar Localmente
+📌 Pré-requisitos
+
+Python 3 instalado
+
+pip instalado
+
+1. Clonar o Repositório
+git clone https://github.com/SEU_USUARIO/advanced-weather-dashboard.git
 cd advanced-weather-dashboard
----
-## 2. Configurar a Chave API Secreta
-Este passo é crucial para o Back-end funcionar.
 
-Crie uma conta na OpenWeatherMap e obtenha uma chave API gratuita.
+2. Configurar a Chave API Secreta
 
-Crie um arquivo chamado .env na pasta raiz do projeto.
+Crie uma conta no OpenWeatherMap e obtenha sua API key.
 
-Adicione sua chave API dentro deste arquivo, seguindo o formato:
+Crie um arquivo chamado .env na raiz do projeto.
 
-Ini, TOML
+Adicione sua chave nesse formato:
 
 # .env
 OPENWEATHER_API_KEY="SUA_CHAVE_AQUI"
-(Substitua "SUA_CHAVE_AQUI" pela chave que você obteve.)
----
-## 3. Configurar e Iniciar o Back-end
-O Back-end rodará em http://127.0.0.1:5000.
 
-Bash
 
-# Crie o ambiente virtual (venv)
+Substitua "SUA_CHAVE_AQUI" pela sua chave real.
+
+3. Configurar e Iniciar o Back-end
+
+O servidor Flask rodará em:
+👉 http://127.0.0.1:5000
+
+Criar ambiente virtual:
 python -m venv venv
 
-# Ative o ambiente virtual (Windows PowerShell)
-& ".\venv\Scripts\activate" 
-# Ou se for Linux/macOS:
-# source venv/bin/activate
+Ativar o ambiente:
 
-# Instale as dependências necessárias
+Windows (PowerShell):
+
+& ".\venv\Scripts\activate"
+
+
+Linux/macOS:
+
+source venv/bin/activate
+
+Instalar dependências:
 pip install Flask python-dotenv requests flask-cors
 
-# Inicie o servidor Flask
+Iniciar o servidor:
 python app.py
-Deixe o servidor rodando no terminal.
 
----
+4. Abrir o Front-end
 
-## 4. Abrir o Front-end
-Abra o arquivo index.html no seu navegador de preferência (clique com o botão direito -> Abrir com...).
+Basta abrir o arquivo:
 
-Com o servidor Flask rodando em segundo plano, utilize o formulário de busca na página para testar a aplicação.
+index.html
+
+
+Use “Clique com o botão direito → Abrir com…” no seu navegador.
+
+Com o Flask rodando, utilize o campo de busca e veja o dashboard em ação.
 
 ⚙️ Tecnologias Utilizadas
-Python: Linguagem principal do Back-end.
 
-Flask: Micro-framework para criação da API.
+Python 3
+
+Flask
+
+dotenv
+
+Requests
+
+Flask-CORS
+
+HTML5 / CSS3
+
+JavaScript ES6+
 
 JavaScript (ES6+): Lógica e consumo de API no Front-end.
 
